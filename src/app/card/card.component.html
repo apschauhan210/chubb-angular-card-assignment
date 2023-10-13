@@ -1,0 +1,25 @@
+  <div class="card mb-5 mb-lg-0">
+    <div class="card-body">
+      <h5 class="card-title text-muted text-uppercase text-center">{{plan}}</h5>
+      <h6 class="card-price text-center">${{price}}<span class="period">/month</span></h6>
+      <hr>
+      <ul class="fa-ul">
+        <li ><span class="fa-li"><i class="fas fa-check"></i></span><p [ngStyle]=" isBold ? {'font-weight': 'bolder'} : {'font-weight' : 'normal'}"> {{users}}</p></li>
+        <li ><span class="fa-li"><i class="fas fa-check"></i></span>{{storage}}GB Storage</li>
+        <li ><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+        <li ><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+        <li [class]="unlimited_private_projects[0]"><span class="fa-li"><i [class]="unlimited_private_projects[1]"></i></span>Unlimited
+          Private Projects</li>
+        <li [class]="dedicated_phone_support[0]"><span class="fa-li"><i [class]="dedicated_phone_support[1]"></i></span>Dedicated
+          Phone Support</li>
+        <li [class]="subdomain[0]"><span class="fa-li"><i [class]="subdomain[1]"></i></span><b>{{unlimited}}</b>Free Subdomain
+        </li>
+        <li [class]="monthly_status_reports[0]"><span class="fa-li"><i [class]="monthly_status_reports[1]"></i></span>Monthly Status
+          Reports</li>
+      </ul>
+      <div class="d-grid">
+        <a href="#" class="btn btn-primary text-uppercase">Button</a>
+      </div>
+    </div>
+  </div>
+

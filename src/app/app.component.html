@@ -1,0 +1,21 @@
+<section class="pricing py-5">
+  <div class="container">
+    <div class="row">
+      <app-card
+        class="col-lg-4"
+        *ngFor="let item of plan"
+        [plan]="item.plan"
+        [price]="item.price"
+        [users]="item.users"
+        [isBold]="item.isBold"
+        [storage]="item.storage"
+        [unlimited_private_projects]="item.unlimited_private_projects"
+        [dedicated_phone_support]="item.dedicated_phone_support"
+        [subdomain]="item.subdomain"
+        [unlimited]="item.unlimited"
+        [monthly_status_reports]="item.monthly_status_reports"
+      >
+      </app-card>
+    </div>
+  </div>
+</section>
